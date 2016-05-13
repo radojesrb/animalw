@@ -1,0 +1,89 @@
+.intro .wrapper {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100%;
+  font-family: 'Passion One', cursive;
+  font-size: 32px;
+  letter-spacing: 3px;
+  background-image: url(http://all4desktop.com/data_images/1440%20x%20900/4194824-sleeping-red-fox.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  overflow: hidden;
+}
+
+.intro .wrapper:hover {
+  cursor: pointer;
+}
+
+.intro .wrapper.globe {
+  background-color: #000;
+  background-position: 0px 2000px;
+  transition: background 1s ease-out;
+}
+
+.intro h1 {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: top 0.3s ease-in;
+  z-index: 1;
+}
+
+.intro h1.subtitle {
+  font-size: 40px;
+}
+
+.intro h1 span {
+  color: #000;
+  opacity: 0.7;
+}
+
+.intro .wrapper.globe h1 span {
+  display: none;
+}
+
+.intro .wrapper.globe:hover {
+  cursor: progress;
+}
+
+.intro .wrapper .overlay {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  left: 0px;
+  bottom: -40%;
+  z-index: 0;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(48,133,163,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(48,133,163,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(48,133,163,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a63085a3',GradientType=0 ); /* IE6-9 */
+  transition: bottom 0.25s ease-in;
+}
+
+.intro .wrapper:hover .overlay {
+  bottom: 0px;
+}
+
+.intro .wrapper .overlay span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}

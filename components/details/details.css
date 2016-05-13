@@ -1,0 +1,48 @@
+.animal.full {
+  height: 100%;
+  margin: 0;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.animal.full:hover {
+  cursor: auto;
+}
+
+.animal .title {
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+
+  background: -moz-linear-gradient(left,  rgba(65,146,75,1) 0%, rgba(61,137,71,1) 6%, rgba(44,99,51,0.75) 32%, rgba(28,64,33,0.5) 56%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(65,146,75,1) 0%,rgba(61,137,71,1) 6%,rgba(44,99,51,0.75) 32%,rgba(28,64,33,0.5) 56%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(65,146,75,1) 0%,rgba(61,137,71,1) 6%,rgba(44,99,51,0.75) 32%,rgba(28,64,33,0.5) 56%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41924b', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  z-index: 10;
+}
+
+.animal .content {
+  position: relative;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  color: #333;
+  z-index: 10;
+}
+
+.animal .content .item {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.animal .content .item:last-child {
+  margin: 0;
+}
+
+.animal .content span {
+  font-weight: 600;
+}

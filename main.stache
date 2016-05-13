@@ -1,0 +1,11 @@
+{{#eq page "details"}}
+  <animalw-details></animalw-details>
+{{/eq}}
+
+{{#eq page "intro"}}
+  <animalw-intro></animalw-intro>
+{{/eq}}
+
+{{#eq page "dashboard"}}
+  <animalw-dashboard></animalw-dashboard>
+{{/eq}}

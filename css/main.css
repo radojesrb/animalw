@@ -1,0 +1,60 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cont {
+  overflow: auto;
+}
+
+.button {
+  background-color: #191919;
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  background-color: #0f0f0f;
+  cursor: pointer;
+}
+
+.button.back {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-family: 'Passion One', cursive;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: #000;
+}
+
+.logo.right {
+  right: 25px;
+}

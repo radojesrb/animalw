@@ -1,0 +1,5 @@
+<link rel="stylesheet" href="components/map/map.css" media="screen" charset="utf-8">
+<div class="map">
+  <div class="title">Continent of origin</div>
+  <div class="gmap">{{continent}}</div>
+</div>

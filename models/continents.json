@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "europe",
+    "lat": 47.202776,
+    "long": 11.997070,
+    "area": 10180000
+  },
+  {
+    "id": 2,
+    "name": "asia",
+    "lat": 45.514046,
+    "long": 87.714844,
+    "area": 44579000
+  },
+  {
+    "id": 3,
+    "name": "north america",
+    "lat": 39.563353,
+    "long": -98.613281,
+    "area": 24709000
+  },
+  {
+    "id": 4,
+    "name": "south america",
+    "lat": -16.056371,
+    "long": -55.722656,
+    "area": 17840000
+  },
+  {
+    "id": 5,
+    "name": "africa",
+    "lat": 6.266158,
+    "long": 21.884766,
+    "area": 30221532
+  },
+  {
+    "id": 6,
+    "name": "australia and oceania",
+    "lat": -17.188027,
+    "long": 132.099609,
+    "area": 8525989
+  },
+  {
+    "id": 7,
+    "name": "antartica",
+    "lat": -71.138093,
+    "long": 55.898438,
+    "area": 14000000
+  }
+]

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="components/intro/intro.css" media="screen" charset="utf-8">
+<div class="intro">
+  <div class="wrapper {{mode}}" ($click)="setMode('globe')">
+    {{#eq mode "intro"}}
+      <h1>{{title.primary}} <span>{{title.suffix}}</span></h1>
+      <div class="overlay">
+        <span>click to continue</span>
+      </div>
+    {{/eq}}
+    
+    {{#eq mode "globe"}}
+      <h1 class="subtitle">{{subtitle}}</h1>
+      <animalw-sounds></animalw-sounds>
+      {{redirect('dashboard', 3000)}}
+    {{/eq}}
+  </div>
+</div>

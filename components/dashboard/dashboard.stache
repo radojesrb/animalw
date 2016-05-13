@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="components/dashboard/dashboard.css" media="screen" charset="utf-8">
+<div class="cont">
+  <div class="header-menu">
+    <div class="item title" ($click)="sort('sleep-duration', 'desc')">Trivia</div>
+    <div class="item" ($click)="sort('sleep-duration', 'desc')">
+      {{#if focusedAnimal}}
+        {{#eq sortDir "desc"}}
+          {{focusedAnimal}} sleeps the most!
+          {{else}}
+            {{triviaQuestionOne}}
+        {{/eq}}
+        {{else}}
+          {{triviaQuestionOne}}
+      {{/if}}
+    </div>
+    <div class="item" ($click)="sort('sleep-duration', 'asc')">
+      {{#if focusedAnimal}}
+        {{#eq sortDir "asc"}}
+          {{focusedAnimal}} sleeps the least!
+          {{else}}
+            {{triviaQuestionTwo}}
+        {{/eq}}
+        {{else}}
+          {{triviaQuestionTwo}}
+      {{/if}}
+    </div>
+    <a class="logo right" href="{{routeUrl(page='intro')}}">Animal<span>W</span></a>
+  </div>
+  <div class="animals list {{sortClass}}">
+    {{#each animals.value}}
+      <a class="btn" href="{{routeUrl(page='details' slug=id)}}">
+        <div class="animal a{{@index}}" style="background-image: url({{photo}})">
+          <div class="overlay"></div>
+          <div class="click">click for details</div>
+          <h1>{{name}}</h1>
+        </div>
+      </a>
+    {{/each}}
+  </div>
+</div>

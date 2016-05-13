@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="components/dashboard/dashboard.css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="components/details/details.css" media="screen" charset="utf-8">
+<div class="animals single">
+{{#with animal}}
+  {{#value}}
+    <div class="animal full" style="background-image: url({{photo}})">
+      <div class="overlay"></div>
+      <h1>{{name}}</h1>
+      <div class="title">Description</div>
+      <div class="content">
+        {{description}}
+      </div>
+      <div class="title">Sleep time</div>
+      <div class="content">
+        <div class="item">
+          <span>{{name}}</span> sleeps around <span>{{sleep-duration}}</span> hours per day
+        </div>
+      </div>
+      <div class="title">Lifespan (in the wild)</div>
+      <div class="content">
+        {{#eq lifespan.length 1}}
+          <div class="item">
+            <span>Around:</span> {{lifespan}} years
+          </div>
+        {{/eq}}
+        {{#eq lifespan.length 2}}
+          {{#each lifespan}}
+            <div class="item">
+              {{#eq @index 0}}
+                <span>From:</span>
+              {{/eq}}
+              {{#eq @index 1}}
+                <span>To:</span>
+              {{/eq}}
+              {{.}} years
+            </div>
+          {{/each}}
+        {{/eq}}
+      </div>
+      <div class="title">Conservation status</div>
+      <div class="content">
+        <div class="item">
+          <animalw-conservation conservation-id="{{conservation}}"></animalw-conservation>
+        </div>
+      </div>
+      <animalw-map continent-id="{{continent}}"></animalw-map>
+    </div>
+    <a href="{{routeUrl(page='dashboard')}}" class="button back" role="button">Back to list</div>
+  {{/value}}
+{{/with}}
+</div>

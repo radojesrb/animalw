@@ -1,0 +1,123 @@
+.header-menu {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 25px;
+  background: #fe9c34;
+  z-index: 10;
+}
+
+.header-menu .item {
+  display: inline;
+  background: #FE8402;
+  padding: 10px 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #fff;
+  transition: background 0.25s ease-in;
+}
+
+.header-menu .item:hover {
+  background: #e47701;
+  cursor: pointer;
+}
+
+.header-menu .item.title {
+  background: #b25c01;
+}
+
+.header-menu .item.title:hover {
+  cursor: auto;
+}
+
+.animals {
+  position: relative;
+  width: 100%;
+}
+
+.animals.list {
+  margin-top: 70px;
+}
+
+.animals .animal {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 3px;
+  padding: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.animals .animal .click {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  height: 80px;
+  line-height: 80px;
+  margin: -40px 0 0 -110px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #fff;
+  transition: opacity 0.3s ease-in;
+  z-index: 15;
+}
+
+.animals.sleep-duration .animal.a0 {
+    height: 90vh;
+}
+
+.animals .animal:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.animals .animal:hover .click {
+  opacity: 1;
+}
+
+.animals .animal h1 {
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.animals .animal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  background: -moz-linear-gradient(right,  rgba(0,0,0,0) 0%, rgba(48,133,163,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(right,  rgba(0,0,0,0) 0%,rgba(48,133,163,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left,  rgba(0,0,0,0) 0%,rgba(48,133,163,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a63085a3',GradientType=0 ); /* IE6-9 */
+  z-index: 0;
+  transition: width 0.35s ease-in;
+}
+
+.animals.list .animal:hover .overlay {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .header-menu .item {
+    display: none;
+  }
+  .animals .animal:hover .click {
+    opacity: 0;
+  }
+}

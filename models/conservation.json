@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "extinct",
+      "shorthand": "ex",
+      "group": 1
+    },
+    {
+      "id": 2,
+      "title": "extinct in the wild",
+      "shorthand": "ew",
+      "group": 1
+    },
+    {
+      "id": 3,
+      "title": "critically endangered",
+      "shorthand": "cr",
+      "group": 2
+    },
+    {
+      "id": 4,
+      "title": "endangered",
+      "shorthand": "en",
+      "group": 2
+    },
+    {
+      "id": 5,
+      "title": "vulnerable",
+      "shorthand": "vu",
+      "group": 2
+    },
+    {
+      "id": 6,
+      "title": "near threatened",
+      "shorthand": "nt",
+      "group": 3
+    },
+    {
+      "id": 7,
+      "title": "conservation dependent",
+      "shorthand": "cd",
+      "group": 3
+    },
+    {
+      "id": 8,
+      "title": "least concern",
+      "shorthand": "lc",
+      "group": 3
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "extinct",
+      "color": "#8C001A"
+    },
+    {
+      "id": 2,
+      "title": "threatened",
+      "color": "#F6FA9C"
+    },
+    {
+      "id": 3,
+      "title": "lower risk",
+      "color": "#8CA93E"
+    }
+  ]
+}
