@@ -14,6 +14,9 @@ var AnimalsViewModel = can.Map.extend({
 		sortClass: {
 			value: null
 		},
+		sortDir: {
+			value: null
+		},
 		focusedAnimal: {
 			value: null
 		},
@@ -28,6 +31,7 @@ var AnimalsViewModel = can.Map.extend({
 	sort: function(type, dir) {
 		var me = this;
 		this.attr('sortClass', type);
+		this.attr('sortDir', dir);
 		var ani = this.attr('animals').done(function(data) {
 			// start sorting once data is received
 			chartPosition(data, type, dir, function(animal) {
@@ -62,6 +66,7 @@ function propComparator(prop, dir) {
 // define the Dashboard component
 can.Component.extend({
   tag: 'animalw-dashboard',
+	leakScope: false,
   template: can.view('components/dashboard/dashboard.stache'),
   scope: AnimalsViewModel
 });
