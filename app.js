@@ -1,4 +1,4 @@
-// init the app
+// init the app v1.0.1
 $(function () {
     var AppState = can.Map.extend({});
     var appState = new AppState();
